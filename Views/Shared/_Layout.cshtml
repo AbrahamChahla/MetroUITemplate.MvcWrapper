@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css' />
+
+    <!-- Base set of styles -->
+    <link href="/MetroUI/css/layout.css" rel="stylesheet" />
+    <link href="/MetroUI/css/nav.css" rel="stylesheet" />
+    <link href="/MetroUI/css/tiles.css" rel="stylesheet" />
+    <link href="/MetroUI/themes/theme_default/theme.css" rel="stylesheet" />
+
+    <!-- Styles for the plugins -->
+    <link href="/MetroUI/plugins/accordion/plugin.css" rel="stylesheet" />
+    <link href="/MetroUI/plugins/tileslide/plugin.css" rel="stylesheet" />
+    <link href="/MetroUI/plugins/tileslidefx/plugin.css" rel="stylesheet" />
+    
+    <!-- Custom style for this page... moved to a seperate app specific file -->
+    <link href="/MetroUIMvc/css/AppSpecific.css" rel="stylesheet" />
+
+    <!-- Base set of scripts... obviously jquery and some low level utility functions -->
+    <script src="/MetroUI/js/jquery191.js"></script>
+    <script src="/MetroUI/js/plugins.js"></script>
+    
+    <!-- Used to render the configuration variables for the MetroUI client side -->
+    @RenderSection("appConfig", required: false)
+
+    <!-- Plugin scripts... provides the basic functionality of the tiles -->
+    <script src="/MetroUI/plugins/accordion/plugin.js"></script>
+    <script src="/MetroUI/plugins/tileslide/plugin.js"></script>
+    <script src="/MetroUI/plugins/tileslidefx/plugin.js"></script>
+
+    <!-- Main startup/core script file... comes after the rest of the setup -->
+    <script src="/MetroUI/js/functions.js"></script>
+    <script src="/MetroUI/js/main.js"></script>
+
+</head>
+<body class="full desktop">
+    <img src='/MetroUI/img/bg/metro_green.jpg' id="bgImage" />
+
+    <!-- ============================================================================== -->
+    <!-- 
+    <!-- ============================================================================== -->
+    <header>
+        <div id="headerWrapper">
+            <div id="headerCenter">
+                <div id="headerTitles">
+                    <h1><a href="#!">My Metro App</a></h1>
+                    <h2>MetroUI for MVC</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+</body>
+</html>

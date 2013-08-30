@@ -1,0 +1,64 @@
+﻿html {
+    background-color: #0F6D32;
+}
+
+#bgImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transition: margin-left 450ms linear;
+    -moz-transition: margin-left 450ms linear;
+    -o-transition: margin-left 450ms;
+    -ms-transition: margin-left 450ms;
+    transition: margin-left 450ms;
+}
+
+.tile {
+    -webkit-transition-property: box-shadow, margin-left, margin-top;
+    -webkit-transition-duration: 0.25s, 0.5s, 0.5s;
+    -moztransition-property: box-shadow, margin-left, margin-top;
+    -moz-transition-duration: 0.25s, 0.5s, 0.5s;
+    -o-transition-property: box-shadow, margin-left, margin-top;
+    -o-transition-duration: 0.25s, 0.5s, 0.5s;
+    -ms-transition-property: box-shadow, margin-left, margin-top;
+    -ms-transition-duration: 0.25s, 0.5s, 0.5s;
+    transition-property: box-shadow, margin-left, margin-top;
+    transition-duration: 0.25s, 0.5s, 0.5s;
+}
+
+
+#tileContainer {
+    display: block;
+    width: 100%;
+}
+
+
+.largeTile {
+    width: 300px;
+    height: 145px;
+}
+
+.smallTile {
+    width: 145px;
+    height: 145px;
+}
+
+#headerCenter {
+	position:relative;
+	max-width:900px;
+	padding:0 15px 0 15px;
+	margin: 0 auto 7px 20px;
+	overflow:hidden;
+}
+
+#centerWrapper{
+	position:relative;
+	max-width: 900px;
+	margin:0 auto 15px 20px !important;
+	padding: 0px 15px 0px 15px;
+}
+
+

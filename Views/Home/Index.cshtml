@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";    
+}
+
+@section appConfig
+{
+        @Html.Raw(ViewData["configVariables"])
+}
+
+<div id="wrapper">
+    <div id="centerWrapper">
+        <div id="tileContainer">
+
+            @Html.Raw(ViewData["metroHtml"])
+
+        </div>
+   </div>
+</div>
